@@ -46,7 +46,7 @@ export function displayCart() {
       cartHTML += `
         <div class="order" id="${item.id}">
           <div class="cart-item">
-            <span class="item-name">${product.name}</span>
+            <span class="item-name">${item.name}</span>
             <div class="item-attribute">
               <div class="item-quantity">${item.quantity}x</div>
               <div class="item-price">@\$${(product.price).toFixed(2)}</div>
