@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- CSS link-->
+  <link rel="stylesheet" href="style/cart.css">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/menu.css">
+
+  <!-- red hat text-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="menu-section">
+    <span class="title">Desserts</span>
+  
+    <!--temporary do all 9, then redo it via html code regen through javascript-->
+    <!--datas has been regen through js-->
+    <div class="menu-grid js-menu-grid"></div>
+  </section>
+
+  <section class="cart-section js-cart-section">
+    <span class="cart-quantity"></span>
+  
+    <div class="order-detail">
+      <div class="cart-empty js-cart-empty">
+        <img alt="empty-cart-image" src="assets/images/illustration-empty-cart.svg">
+        <br>
+        <span class="empty-cart-message">
+          Your added items will appear here
+        </span>
+      </div>
+  
+      <div class="cart-with-items js-cart-with-items"></div>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/progressive-newbie263">JackFrost</a>.
+  </div>
+</body>
+
+<script src="script/scripts.js" type="module"></script>
+<script src="script/cart.js" type="module"></script>
+</html>

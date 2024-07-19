@@ -1,0 +1,59 @@
+.attribution { 
+  font-size: 14px; 
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+/* background: rose 100 */
+body {
+  padding: 2% 5%;
+  margin-bottom: 10%;
+  min-height: 100vh;
+  font-weight: 400;
+  font-family:Red Hat Text, Arial;
+  background-color: hsl(13, 31%, 94%);  
+  display: flex;
+  flex: 1 auto;
+  justify-content: center;
+}
+
+/* menu section in general: */
+.menu-section {
+  flex: 3;
+}
+
+.menu-grid {
+  display: grid;
+  /*
+    the below line basically display 3 items per column
+    grid-template-columns: auto auto auto (1 : 1 : 1)
+  */
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  row-gap: 2%;
+  column-gap: 2%;
+}
+
+
+
+/* cart section in general: */
+.cart-section {
+  flex: 1;
+}
+
+.cart-section {
+  margin: 2% auto 0 2%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 300px;
+  padding: 20px 30px 30px 20px;
+  border-radius: 15px;
+  height: fit-content;
+}
