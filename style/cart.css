@@ -91,7 +91,7 @@
   justify-content: center;
   padding: 13px 0;
   margin-bottom: 20px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .carbon-neutral:hover {
@@ -106,7 +106,7 @@
   display: flex;
 }
 
-.confirm-order {
+.confirm-order, .start-new-order {
   width: 100%;
   padding: 13px 0;
   border: none;
@@ -119,7 +119,63 @@
   transition: 0.5s;
 }
 
-.confirm-order:hover {
+.confirm-order:hover, .start-new-order:hover {
   background-color: red;
+}
+
+.confirmed-order {
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  position: absolute;
+  margin: 25% auto 0 auto;
+  right: 0;
+  left: 0;
+  width: 40%;
+  padding: 3%;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.confirmed-order img {
+  width: 10%;
+  margin-bottom: 20px;
+}
+
+
+
+/*CSS code for the confirmed order*/
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(13, 31%, 94%);
+  padding: 4%;
+  margin: 5% 0;
+  border-radius: 10px;
+}
+
+.item-attribute-confirmed {
+  display: flex;
+  flex-direction: row;
+}
+
+.order-price-confirmed {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-confirmed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
 }
 

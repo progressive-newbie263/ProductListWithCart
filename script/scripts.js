@@ -1,5 +1,12 @@
 import { products } from "./products.js";
-import { addToCart, displayCart, removeFromCart } from "./cart.js";
+import { 
+  addToCart, 
+  displayCart, 
+  removeFromCart, 
+  saveToStorage, 
+  loadFromStorage, 
+  confirmOrder 
+} from "./cart.js";
 
 // Code for generating HTML via JS
 const productMenu = document.querySelector('.js-menu-grid');
@@ -38,10 +45,10 @@ productMenu.innerHTML = productsHTML;
 export let cartQuantity = 0;
 
 export function updateCartQuantity() {
-  displayCart();
-
   document.querySelector('.cart-quantity')
     .innerText = `Your Cart (${cartQuantity})`;
+
+  displayCart();
 }
 
 //Add event listener:
