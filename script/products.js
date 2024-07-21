@@ -1,7 +1,6 @@
 export const products = [
   {
       "id": 1,
-      "button": 'bt1',
       "image": {
          "thumbnail": "./assets/images/image-waffle-thumbnail.jpg",
          "mobile": "./assets/images/image-waffle-mobile.jpg",
@@ -15,7 +14,6 @@ export const products = [
 
   {
       "id": 2,
-      "button": 'bt2',
       "image": {
          "thumbnail": "./assets/images/image-creme-brulee-thumbnail.jpg",
          "mobile": "./assets/images/image-creme-brulee-mobile.jpg",
@@ -29,7 +27,6 @@ export const products = [
 
    {
       "id": 3,
-      "button": 'bt3',
       "image": {
          "thumbnail": "./assets/images/image-macaron-thumbnail.jpg",
          "mobile": "./assets/images/image-macaron-mobile.jpg",
@@ -43,7 +40,6 @@ export const products = [
 
    {
       "id": 4,
-      "button": 'bt4',
       "image": {
           "thumbnail": "./assets/images/image-tiramisu-thumbnail.jpg",
           "mobile": "./assets/images/image-tiramisu-mobile.jpg",
@@ -57,7 +53,6 @@ export const products = [
 
    {
       "id": 5,
-      "button": 'bt5',
       "image": {
           "thumbnail": "./assets/images/image-baklava-thumbnail.jpg",
           "mobile": "./assets/images/image-baklava-mobile.jpg",
@@ -71,7 +66,6 @@ export const products = [
 
    {
       "id": 6,
-      "button": 'bt6',
       "image": {
           "thumbnail": "./assets/images/image-meringue-thumbnail.jpg",
           "mobile": "./assets/images/image-meringue-mobile.jpg",
@@ -85,7 +79,6 @@ export const products = [
 
    {
       "id": 7,
-      "button": 'bt7',
       "image": {
           "thumbnail": "./assets/images/image-cake-thumbnail.jpg",
           "mobile": "./assets/images/image-cake-mobile.jpg",
@@ -99,7 +92,6 @@ export const products = [
 
    {
       "id": 8,
-      "button": 'bt8',
       "image": {
           "thumbnail": "./assets/images/image-brownie-thumbnail.jpg",
           "mobile": "./assets/images/image-brownie-mobile.jpg",
@@ -113,7 +105,6 @@ export const products = [
 
    {
       "id": 9,
-      "button": 'bt9',
       "image": {
           "thumbnail": "./assets/images/image-panna-cotta-thumbnail.jpg",
           "mobile": "./assets/images/image-panna-cotta-mobile.jpg",
