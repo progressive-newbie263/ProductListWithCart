@@ -141,6 +141,7 @@ export function displayCart() {
     button.addEventListener('click', (event) => {
       const productId = event.currentTarget.dataset.productId;
       removeFromCart(productId, Number(itemQuantity));
+      //console.log(cartQuantity);
       displayCart();
     });
   });
@@ -186,6 +187,7 @@ export function confirmOrder() {
   });
 
   let confirmOrderHTML = `
+    <div class="overlay"></div>
     <div class="confirmed-order">
       <img alt="confirmed-icon" src="assets/images/icon-order-confirmed.svg">
       
@@ -212,6 +214,18 @@ export function confirmOrder() {
   `;
   // Append the confirmation HTML to the body or desired container
   document.body.insertAdjacentHTML('beforeend', confirmOrderHTML);
+
+  //to make changing the color/overlay of the background after clicking on confirm order button
+  document.querySelector('.overlay').style.display = 'block';
+
+  //start a new order
+  const startNewOrderButton = document.querySelector('.start-new-order');
+  if (startNewOrderButton) {
+    startNewOrderButton.addEventListener('click', () => {
+      document.querySelector('.overlay').remove();
+      document.querySelector('.confirmed-order').remove();
+    });
+  }
 }
 
 // Load cart from storage on page load

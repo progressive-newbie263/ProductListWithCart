@@ -17,10 +17,9 @@ body {
   margin-bottom: 10%;
   min-height: 100vh;
   font-weight: 400;
-  font-family:Red Hat Text, Arial;
+  font-family: Red Hat Text, Arial;
   background-color: hsl(13, 31%, 94%);  
   display: flex;
-  flex: 1 auto;
   justify-content: center;
 }
 
@@ -40,13 +39,7 @@ body {
   column-gap: 2%;
 }
 
-
-
 /* cart section in general: */
-.cart-section {
-  flex: 1;
-}
-
 .cart-section {
   margin: 2% auto 0 2%;
   display: flex;
@@ -56,4 +49,93 @@ body {
   padding: 30px;
   border-radius: 15px;
   height: fit-content;
+}
+
+
+@media screen and (max-width: 450px) {
+  body {
+    display: block;
+    position: relative;
+  }
+  .menu-grid {
+    display: grid;
+    /*
+      the below line basically display 3 items per column
+      grid-template-columns: auto auto auto (1 : 1 : 1)
+    */
+    grid-template-columns: auto;
+    row-gap: 2%;
+    column-gap: 2%;
+  }
+
+  .cart-section {
+    position: absolute;
+    width: 75%;
+    bottom: -30%;
+  }
+
+  .confirmed-order {
+    width: 90%;
+    padding: 5%;
+    top: 0%
+  }
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 450px) {
+  body {
+    display: block;
+    position: relative;
+  }
+  .menu-grid {
+    display: grid;
+    /*
+      the below line basically display 3 items per column
+      grid-template-columns: auto auto auto (1 : 1 : 1)
+    */
+    grid-template-columns: auto auto;
+    row-gap: 2%;
+    column-gap: 2%;
+  }
+
+  .cart-section {
+    position: absolute;
+    width: 75%;
+    bottom: -40%;
+  }
+
+  .confirmed-order {
+    width: 90%;
+    padding: 5%;
+    top: 0%
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  body {
+    display: block;
+    position: relative;
+  }
+  .menu-grid {
+    display: grid;
+    /*
+      the below line basically display 3 items per column
+      grid-template-columns: auto auto auto (1 : 1 : 1)
+    */
+    grid-template-columns: auto auto auto;
+    row-gap: 2%;
+    column-gap: 2%;
+  }
+
+  .cart-section {
+    position: absolute;
+    width: 60%;
+    bottom: -40%;
+  }
+
+  .confirmed-order {
+    width: 60%;
+    padding: 5%;
+    top: 0%
+  }
 }

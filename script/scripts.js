@@ -8,6 +8,17 @@ import {
   confirmOrder 
 } from "./cart.js";
 
+
+//starting for cart and saving datas
+export let cartQuantity = 0;
+
+export function updateCartQuantity() {
+  document.querySelector('.cart-quantity')
+    .innerText = `Your Cart (${cartQuantity})`;
+
+  displayCart();
+}
+
 // Code for generating HTML via JS
 const productMenu = document.querySelector('.js-menu-grid');
 
@@ -41,15 +52,7 @@ products.forEach((product) => {
 productMenu.innerHTML = productsHTML;
 
 
-//starting for cart and saving datas
-export let cartQuantity = 0;
 
-export function updateCartQuantity() {
-  document.querySelector('.cart-quantity')
-    .innerText = `Your Cart (${cartQuantity})`;
-
-  displayCart();
-}
 
 //Add event listener:
 //function for each button
